@@ -1,6 +1,6 @@
 /*
  * Automatically Generated from Mathematica.
- * Tue 13 Jun 2017 14:31:24 GMT-04:00
+ * Thu 15 Jun 2017 17:12:43 GMT-04:00
  */
 
 #ifndef JS_HIPROTATIONANGLES_RIGHTSTANCE_HH
@@ -14,7 +14,7 @@
 #include "math2mat.hpp"
 #include "mdefs.hpp"
 
-namespace RightStance
+namespace Pattern[Cassie, Blank[oneStep]]
 {
 
   void Js_HipRotationAngles_RightStance_raw(double *p_output1, const double *var1);

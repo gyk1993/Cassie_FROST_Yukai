@@ -1,6 +1,6 @@
 /*
  * Automatically Generated from Mathematica.
- * Tue 13 Jun 2017 13:36:57 GMT-04:00
+ * Fri 16 Jun 2017 12:30:20 GMT-04:00
  */
 
 #ifndef J_BODY2TOEDISTANCE_RIGHTSTANCE_HH
@@ -14,7 +14,7 @@
 #include "math2mat.hpp"
 #include "mdefs.hpp"
 
-namespace RightStance
+namespace Pattern[Cassie, Blank[oneStep]]
 {
 
   void J_Body2ToeDistance_RightStance_raw(double *p_output1, const double *var1);

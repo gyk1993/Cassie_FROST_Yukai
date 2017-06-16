@@ -1,6 +1,6 @@
 /*
  * Automatically Generated from Mathematica.
- * Mon 12 Jun 2017 22:05:23 GMT-04:00
+ * Fri 16 Jun 2017 12:30:26 GMT-04:00
  */
 
 #ifdef MATLAB_MEX_FILE
@@ -137,7 +137,7 @@ void mexFunction( int nlhs, mxArray *plhs[],
 
 #include "xMinusCont_RightImpact.hh"
 
-namespace Times[2, step, Pattern[Cassie, Blank[]]]
+namespace Pattern[Cassie, Blank[oneStep]]
 {
 
 void xMinusCont_RightImpact_raw(double *p_output1, const double *var1,const double *var2)

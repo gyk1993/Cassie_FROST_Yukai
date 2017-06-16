@@ -1,6 +1,6 @@
 /*
  * Automatically Generated from Mathematica.
- * Tue 13 Jun 2017 14:31:14 GMT-04:00
+ * Thu 15 Jun 2017 17:12:39 GMT-04:00
  */
 
 #ifdef MATLAB_MEX_FILE
@@ -108,7 +108,7 @@ void mexFunction( int nlhs, mxArray *plhs[],
 
 #include "HipAbductonAngles_RightStance.hh"
 
-namespace RightStance
+namespace Pattern[Cassie, Blank[oneStep]]
 {
 
 void HipAbductonAngles_RightStance_raw(double *p_output1, const double *var1)

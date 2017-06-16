@@ -1,6 +1,6 @@
 /*
  * Automatically Generated from Mathematica.
- * Mon 12 Jun 2017 22:04:12 GMT-04:00
+ * Fri 16 Jun 2017 12:28:57 GMT-04:00
  */
 
 #ifndef DDH_QFIXED_CASSIE_HH
@@ -14,7 +14,7 @@
 #include "math2mat.hpp"
 #include "mdefs.hpp"
 
-namespace Times[2, step, Pattern[Cassie, Blank[]]]
+namespace Pattern[Cassie, Blank[oneStep]]
 {
 
   void ddh_qfixed_cassie_raw(double *p_output1, const double *var1,const double *var2,const double *var3);

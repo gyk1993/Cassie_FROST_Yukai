@@ -1,6 +1,6 @@
 /*
  * Automatically Generated from Mathematica.
- * Tue 13 Jun 2017 13:36:58 GMT-04:00
+ * Fri 16 Jun 2017 12:30:21 GMT-04:00
  */
 
 #ifdef MATLAB_MEX_FILE
@@ -128,7 +128,7 @@ void mexFunction( int nlhs, mxArray *plhs[],
 
 #include "Js_Body2ToeDistance_RightStance.hh"
 
-namespace RightStance
+namespace Pattern[Cassie, Blank[oneStep]]
 {
 
 void Js_Body2ToeDistance_RightStance_raw(double *p_output1, const double *var1)

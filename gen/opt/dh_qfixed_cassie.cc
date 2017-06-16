@@ -1,6 +1,6 @@
 /*
  * Automatically Generated from Mathematica.
- * Mon 12 Jun 2017 22:04:10 GMT-04:00
+ * Fri 16 Jun 2017 12:28:55 GMT-04:00
  */
 
 #ifdef MATLAB_MEX_FILE
@@ -119,7 +119,7 @@ void mexFunction( int nlhs, mxArray *plhs[],
 
 #include "dh_qfixed_cassie.hh"
 
-namespace Times[2, step, Pattern[Cassie, Blank[]]]
+namespace Pattern[Cassie, Blank[oneStep]]
 {
 
 void dh_qfixed_cassie_raw(double *p_output1, const double *var1,const double *var2)

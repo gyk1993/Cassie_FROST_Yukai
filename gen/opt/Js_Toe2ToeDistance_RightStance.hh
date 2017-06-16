@@ -1,6 +1,6 @@
 /*
  * Automatically Generated from Mathematica.
- * Tue 13 Jun 2017 13:37:06 GMT-04:00
+ * Fri 16 Jun 2017 12:30:23 GMT-04:00
  */
 
 #ifndef JS_TOE2TOEDISTANCE_RIGHTSTANCE_HH
@@ -14,7 +14,7 @@
 #include "math2mat.hpp"
 #include "mdefs.hpp"
 
-namespace RightStance
+namespace Pattern[Cassie, Blank[oneStep]]
 {
 
   void Js_Toe2ToeDistance_RightStance_raw(double *p_output1, const double *var1);

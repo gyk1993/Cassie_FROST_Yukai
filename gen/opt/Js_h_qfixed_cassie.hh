@@ -1,6 +1,6 @@
 /*
  * Automatically Generated from Mathematica.
- * Mon 12 Jun 2017 22:04:10 GMT-04:00
+ * Fri 16 Jun 2017 12:28:54 GMT-04:00
  */
 
 #ifndef JS_H_QFIXED_CASSIE_HH
@@ -14,7 +14,7 @@
 #include "math2mat.hpp"
 #include "mdefs.hpp"
 
-namespace Times[2, step, Pattern[Cassie, Blank[]]]
+namespace Pattern[Cassie, Blank[oneStep]]
 {
 
   void Js_h_qfixed_cassie_raw(double *p_output1, const double *var1);

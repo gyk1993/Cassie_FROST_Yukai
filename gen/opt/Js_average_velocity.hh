@@ -1,6 +1,6 @@
 /*
  * Automatically Generated from Mathematica.
- * Mon 12 Jun 2017 22:10:57 GMT-04:00
+ * Fri 16 Jun 2017 12:30:16 GMT-04:00
  */
 
 #ifndef JS_AVERAGE_VELOCITY_HH
@@ -14,7 +14,7 @@
 #include "math2mat.hpp"
 #include "mdefs.hpp"
 
-namespace Times[2, step, Pattern[Cassie, Blank[]]]
+namespace Pattern[Cassie, Blank[oneStep]]
 {
 
   void Js_average_velocity_raw(double *p_output1, const double *var1);
@@ -27,7 +27,7 @@ namespace Times[2, step, Pattern[Cassie, Blank[]]]
 
 	
     // - Outputs
-    assert_size_matrix(p_output1, 8, 2);
+    assert_size_matrix(p_output1, 4, 2);
 
 
     // set zero the matrix

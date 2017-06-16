@@ -1,6 +1,6 @@
 /*
  * Automatically Generated from Mathematica.
- * Mon 12 Jun 2017 22:10:57 GMT-04:00
+ * Fri 16 Jun 2017 12:30:16 GMT-04:00
  */
 
 #ifdef MATLAB_MEX_FILE
@@ -51,18 +51,10 @@ static void output1(double *p_output1,const double *var1)
   p_output1[1]=1;
   p_output1[2]=1;
   p_output1[3]=1;
-  p_output1[4]=2;
+  p_output1[4]=1;
   p_output1[5]=2;
-  p_output1[6]=2;
-  p_output1[7]=2;
-  p_output1[8]=1;
-  p_output1[9]=2;
-  p_output1[10]=3;
-  p_output1[11]=25;
-  p_output1[12]=1;
-  p_output1[13]=2;
-  p_output1[14]=4;
-  p_output1[15]=26;
+  p_output1[6]=3;
+  p_output1[7]=25;
 }
 
 
@@ -108,7 +100,7 @@ void mexFunction( int nlhs, mxArray *plhs[],
 
    
   /*  Create matrices for return arguments.  */
-  plhs[0] = mxCreateDoubleMatrix((mwSize) 8, (mwSize) 2, mxREAL);
+  plhs[0] = mxCreateDoubleMatrix((mwSize) 4, (mwSize) 2, mxREAL);
   p_output1 = mxGetPr(plhs[0]);
 
 
@@ -122,7 +114,7 @@ void mexFunction( int nlhs, mxArray *plhs[],
 
 #include "Js_average_velocity.hh"
 
-namespace Times[2, step, Pattern[Cassie, Blank[]]]
+namespace Pattern[Cassie, Blank[oneStep]]
 {
 
 void Js_average_velocity_raw(double *p_output1, const double *var1)

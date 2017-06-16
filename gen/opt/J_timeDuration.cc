@@ -1,6 +1,6 @@
 /*
  * Automatically Generated from Mathematica.
- * Mon 12 Jun 2017 22:09:30 GMT-04:00
+ * Fri 16 Jun 2017 12:28:34 GMT-04:00
  */
 
 #ifdef MATLAB_MEX_FILE
@@ -108,7 +108,7 @@ void mexFunction( int nlhs, mxArray *plhs[],
 
 #include "J_timeDuration.hh"
 
-namespace Times[2, step, Pattern[Cassie, Blank[]]]
+namespace Pattern[Cassie, Blank[oneStep]]
 {
 
 void J_timeDuration_raw(double *p_output1, const double *var1)

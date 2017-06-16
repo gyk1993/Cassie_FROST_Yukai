@@ -1,6 +1,6 @@
 /*
  * Automatically Generated from Mathematica.
- * Tue 13 Jun 2017 12:56:12 GMT-04:00
+ * Fri 16 Jun 2017 12:35:19 GMT-04:00
  */
 
 #ifndef J_XDISCRETEMAPRIGHTIMPACT_HH
@@ -14,7 +14,7 @@
 #include "math2mat.hpp"
 #include "mdefs.hpp"
 
-namespace RightImpact
+namespace Pattern[Cassie, Blank[oneStep]]
 {
 
   void J_xDiscreteMapRightImpact_raw(double *p_output1, const double *var1,const double *var2);

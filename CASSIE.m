@@ -34,7 +34,8 @@ classdef CASSIE < RobotLinks
             % Bottom of toe
             l_foot_frame = obj.Joints(getJointIndices(obj, 'toe_joint_left'));
             H = double(subs(l_foot_frame.computeForwardKinematics, obj.States.x, zeros(22,1)));
-            R = H(1:3,1:3)'*Rz(-pi/2)*Rx(deg2rad(50));
+%             R = H(1:3,1:3)'*Rz(-pi/2)*Rx(deg2rad(50));
+            R = Rz(deg2rad(50))*Ry(-pi/2);
             obj.ContactPoints.LeftToeBottom = CoordinateFrame(...
                 'Name','LeftToeBottom',...
                 'Reference',l_foot_frame,...

@@ -1,6 +1,6 @@
 /*
  * Automatically Generated from Mathematica.
- * Mon 12 Jun 2017 22:09:30 GMT-04:00
+ * Fri 16 Jun 2017 12:28:35 GMT-04:00
  */
 
 #ifndef JS_TIMEDURATION_HH
@@ -14,7 +14,7 @@
 #include "math2mat.hpp"
 #include "mdefs.hpp"
 
-namespace Times[2, step, Pattern[Cassie, Blank[]]]
+namespace Pattern[Cassie, Blank[oneStep]]
 {
 
   void Js_timeDuration_raw(double *p_output1, const double *var1);

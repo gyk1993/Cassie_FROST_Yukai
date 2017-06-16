@@ -1,6 +1,6 @@
 /*
  * Automatically Generated from Mathematica.
- * Tue 13 Jun 2017 16:15:10 GMT-04:00
+ * Fri 16 Jun 2017 12:30:01 GMT-04:00
  */
 
 #ifndef U_ZMP_RIGHTTOEBOTTOM_HH
@@ -14,7 +14,7 @@
 #include "math2mat.hpp"
 #include "mdefs.hpp"
 
-namespace RightStance
+namespace Pattern[Cassie, Blank[oneStep]]
 {
 
   void u_zmp_RightToeBottom_raw(double *p_output1, const double *var1,const double *var2);

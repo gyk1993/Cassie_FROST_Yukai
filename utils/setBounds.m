@@ -9,11 +9,11 @@ bounds.RightStance.time.t0.lb = 0;
 bounds.RightStance.time.t0.ub = 0;
 bounds.RightStance.time.t0.x0 = 0;
 
-bounds.RightStance.time.tf.lb = 0.5;
+bounds.RightStance.time.tf.lb = 0.4;
 bounds.RightStance.time.tf.ub = 1;
 bounds.RightStance.time.tf.x0 = 1;
 
-bounds.RightStance.time.duration.lb = 0.5;
+bounds.RightStance.time.duration.lb = 0.4;
 bounds.RightStance.time.duration.ub = 1;
 bounds.RightStance.time.duration.x0 = 1;
 

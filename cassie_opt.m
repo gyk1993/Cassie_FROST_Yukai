@@ -44,7 +44,6 @@ nlp.update;
 % Configure bounds and update
 setBounds;
 nlp.configure(bounds);
-
 %% Define User Costs
 
 % Torque Cost
@@ -53,23 +52,23 @@ u2 = sum((u).^2);
 u2_fun = SymFunction('torque',u2,{u});
 addRunningCost(nlp.Phase(getPhaseIndex(nlp,'RightStance')),u2_fun,'u');
 
-% Hip Abduction Cost
-q_torso = r_stance.States.x([4,5]);
-cost = {sum((100.*q_torso).^2)};
-cost_fun = SymFunction('q_torso',cost,{r_stance.States.x});
-addRunningCost(nlp.Phase(getPhaseIndex(nlp,'RightStance')),cost_fun,'x');
-
-% Hip Abduction Cost
-q_hip_abduction = r_stance.States.x([8,16]);
-cost = {sum((100.*q_hip_abduction).^2)};
-cost_fun = SymFunction('q_hip_abduction',cost,{r_stance.States.x});
-addRunningCost(nlp.Phase(getPhaseIndex(nlp,'RightStance')),cost_fun,'x');
-
-% Hip Rotation Cost
-q_hip_rotation = r_stance.States.x([9,17]);
-cost = {sum((100.*q_hip_rotation).^2)};
-cost_fun = SymFunction('q_hip_rotation',cost,{r_stance.States.x});
-addRunningCost(nlp.Phase(getPhaseIndex(nlp,'RightStance')),cost_fun,'x');
+% % Hip Abduction Cost
+% q_torso = r_stance.States.x([4,5]);
+% cost = {sum((100.*q_torso).^2)};
+% cost_fun = SymFunction('q_torso',cost,{r_stance.States.x});
+% addRunningCost(nlp.Phase(getPhaseIndex(nlp,'RightStance')),cost_fun,'x');
+% 
+% % Hip Abduction Cost
+% q_hip_abduction = r_stance.States.x([8,16]);
+% cost = {sum((100.*q_hip_abduction).^2)};
+% cost_fun = SymFunction('q_hip_abduction',cost,{r_stance.States.x});
+% addRunningCost(nlp.Phase(getPhaseIndex(nlp,'RightStance')),cost_fun,'x');
+% 
+% % Hip Rotation Cost
+% q_hip_rotation = r_stance.States.x([9,17]);
+% cost = {sum((100.*q_hip_rotation).^2)};
+% cost_fun = SymFunction('q_hip_rotation',cost,{r_stance.States.x});
+% addRunningCost(nlp.Phase(getPhaseIndex(nlp,'RightStance')),cost_fun,'x');
 
 % Update
 nlp.update;
@@ -81,9 +80,9 @@ if COMPILE
         addpath([export_path,'opt']);
     end
     cassie.ExportKinematics([export_path,'kinematics\']);
-    compileConstraint(nlp,[],[],[export_path,'opt']);
+%     compileConstraint(nlp,[],[],[export_path,'opt']);
     compileObjective(nlp,[],[],[export_path,'opt']);
-%     compileConstraint(nlp,[],[],[export_path,'opt'],'dynamics_equation');
+    compileConstraint(nlp,[],[],[export_path,'opt'],'dynamics_equation');
 end
 
 % compileConstraint(nlp.Phase(1),'Toe2ToeDistance_RightToeBottom',[export_path,'opt'],[],'ForceExport',true);
@@ -118,25 +117,25 @@ end
 % removeConstraint(nlp.Phase(4),'dxDiscreteMapLeftImpact');
 
 % Create Ipopt solver
-ipopt_options.max_iter         = 3000;
-ipopt_options.tol              = 1e2;
-ipopt_options.dual_inf_tol           = 1e2;
-ipopt_options.constr_viol_tol        = 1e-3;
-ipopt_options.compl_inf_tol          = 1e2;
+% ipopt_options.max_iter         = 3000;
+% ipopt_options.tol              = 1e2;
+% ipopt_options.dual_inf_tol           = 1e2;
+% ipopt_options.constr_viol_tol        = 1e-3;
+% ipopt_options.compl_inf_tol          = 1e2;
 % ipopt_options.derivative_test = 'first-order';
 % ipopt_options.derivative_test_perturbation = 1e-8;
 % ipopt_options.derivative_test_print_all = 'no';
 
 nlp.update;
-solver = IpoptApplication(nlp, ipopt_options);
-
+% solver = IpoptApplication(nlp, ipopt_options);
+solver = IpoptApplication(nlp);
 % Run Optimization
-old = load('x0');
+old = load('x1');
 [sol, info] = optimize(solver, old.sol);
 % [sol, info] = optimize(solver);
 [tspan, states, inputs, params] = exportSolution(nlp, sol);
 
-
+save('x1','sol')
 %% Animate 
 q_log_R = states{1}.x; % Right stance
 q_log_L = q_log_R([1:6,15:22,7:14],:); % symmetric Left stance

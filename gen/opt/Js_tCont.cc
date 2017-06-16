@@ -1,6 +1,6 @@
 /*
  * Automatically Generated from Mathematica.
- * Mon 12 Jun 2017 22:09:28 GMT-04:00
+ * Fri 16 Jun 2017 12:28:33 GMT-04:00
  */
 
 #ifdef MATLAB_MEX_FILE
@@ -114,7 +114,7 @@ void mexFunction( int nlhs, mxArray *plhs[],
 
 #include "Js_tCont.hh"
 
-namespace Times[2, step, Pattern[Cassie, Blank[]]]
+namespace Pattern[Cassie, Blank[oneStep]]
 {
 
 void Js_tCont_raw(double *p_output1, const double *var1)

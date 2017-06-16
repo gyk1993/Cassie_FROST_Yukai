@@ -1,6 +1,6 @@
 /*
  * Automatically Generated from Mathematica.
- * Mon 12 Jun 2017 22:10:56 GMT-04:00
+ * Fri 16 Jun 2017 12:30:15 GMT-04:00
  */
 
 #ifdef MATLAB_MEX_FILE
@@ -45,32 +45,22 @@ const double Degree = 0.01745329251994329576924;
  */
 static void output1(double *p_output1,const double *var1,const double *var2,const double *var3)
 {
-  double t871;
-  double t872;
-  double t912;
-  double t924;
-  double t925;
-  double t981;
-  double t1022;
-  double t1024;
-  double t983;
-  t871 = -1.*var1[0];
-  t872 = t871 + var1[1];
-  t912 = Power(t872,-2);
-  t924 = -1.*var2[0];
-  t925 = t924 + var3[0];
-  t981 = 1/t872;
-  t1022 = -1.*var2[1];
-  t1024 = t1022 + var3[1];
-  t983 = -1.*t981;
-  p_output1[0]=t912*t925;
-  p_output1[1]=-1.*t912*t925;
-  p_output1[2]=t983;
-  p_output1[3]=t981;
-  p_output1[4]=t1024*t912;
-  p_output1[5]=-1.*t1024*t912;
-  p_output1[6]=t983;
-  p_output1[7]=t981;
+  double t150;
+  double t523;
+  double t524;
+  double t986;
+  double t1480;
+  double t5164;
+  t150 = -1.*var1[0];
+  t523 = t150 + var1[1];
+  t524 = Power(t523,-2);
+  t986 = -1.*var2[0];
+  t1480 = t986 + var3[0];
+  t5164 = 1/t523;
+  p_output1[0]=t1480*t524;
+  p_output1[1]=-1.*t1480*t524;
+  p_output1[2]=-1.*t5164;
+  p_output1[3]=t5164;
 }
 
 
@@ -134,7 +124,7 @@ void mexFunction( int nlhs, mxArray *plhs[],
 
    
   /*  Create matrices for return arguments.  */
-  plhs[0] = mxCreateDoubleMatrix((mwSize) 8, (mwSize) 1, mxREAL);
+  plhs[0] = mxCreateDoubleMatrix((mwSize) 4, (mwSize) 1, mxREAL);
   p_output1 = mxGetPr(plhs[0]);
 
 
@@ -148,7 +138,7 @@ void mexFunction( int nlhs, mxArray *plhs[],
 
 #include "J_average_velocity.hh"
 
-namespace Times[2, step, Pattern[Cassie, Blank[]]]
+namespace Pattern[Cassie, Blank[oneStep]]
 {
 
 void J_average_velocity_raw(double *p_output1, const double *var1,const double *var2,const double *var3)

@@ -1,6 +1,6 @@
 /*
  * Automatically Generated from Mathematica.
- * Mon 12 Jun 2017 22:10:55 GMT-04:00
+ * Fri 16 Jun 2017 12:30:15 GMT-04:00
  */
 
 #ifdef MATLAB_MEX_FILE
@@ -45,14 +45,9 @@ const double Degree = 0.01745329251994329576924;
  */
 static void output1(double *p_output1,const double *var1,const double *var2,const double *var3)
 {
-  double t746;
-  double t803;
-  double t869;
-  t746 = -1.*var1[0];
-  t803 = t746 + var1[1];
-  t869 = 1/t803;
-  p_output1[0]=t869*(-1.*var2[0] + var3[0]);
-  p_output1[1]=t869*(-1.*var2[1] + var3[1]);
+  double _NotUsed;
+  NULL;
+  p_output1[0]=(-var2[0] + var3[0])/(-var1[0] + var1[1]);
 }
 
 
@@ -116,7 +111,7 @@ void mexFunction( int nlhs, mxArray *plhs[],
 
    
   /*  Create matrices for return arguments.  */
-  plhs[0] = mxCreateDoubleMatrix((mwSize) 2, (mwSize) 1, mxREAL);
+  plhs[0] = mxCreateDoubleMatrix((mwSize) 1, (mwSize) 1, mxREAL);
   p_output1 = mxGetPr(plhs[0]);
 
 
@@ -130,7 +125,7 @@ void mexFunction( int nlhs, mxArray *plhs[],
 
 #include "average_velocity.hh"
 
-namespace Times[2, step, Pattern[Cassie, Blank[]]]
+namespace Pattern[Cassie, Blank[oneStep]]
 {
 
 void average_velocity_raw(double *p_output1, const double *var1,const double *var2,const double *var3)

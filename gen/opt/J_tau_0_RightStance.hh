@@ -1,6 +1,6 @@
 /*
  * Automatically Generated from Mathematica.
- * Mon 12 Jun 2017 22:05:13 GMT-04:00
+ * Fri 16 Jun 2017 12:30:11 GMT-04:00
  */
 
 #ifndef J_TAU_0_RIGHTSTANCE_HH
@@ -14,7 +14,7 @@
 #include "math2mat.hpp"
 #include "mdefs.hpp"
 
-namespace Times[2, step, Pattern[Cassie, Blank[]]]
+namespace Pattern[Cassie, Blank[oneStep]]
 {
 
   void J_tau_0_RightStance_raw(double *p_output1, const double *var1,const double *var2);

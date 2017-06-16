@@ -1,6 +1,6 @@
 /*
  * Automatically Generated from Mathematica.
- * Tue 13 Jun 2017 16:15:12 GMT-04:00
+ * Fri 16 Jun 2017 12:30:02 GMT-04:00
  */
 
 #ifdef MATLAB_MEX_FILE
@@ -114,7 +114,7 @@ void mexFunction( int nlhs, mxArray *plhs[],
 
 #include "Js_u_zmp_RightToeBottom.hh"
 
-namespace RightStance
+namespace Pattern[Cassie, Blank[oneStep]]
 {
 
 void Js_u_zmp_RightToeBottom_raw(double *p_output1, const double *var1)

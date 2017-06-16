@@ -1,6 +1,6 @@
 /*
  * Automatically Generated from Mathematica.
- * Mon 12 Jun 2017 22:05:03 GMT-04:00
+ * Fri 16 Jun 2017 12:29:59 GMT-04:00
  */
 
 #ifdef MATLAB_MEX_FILE
@@ -45,17 +45,17 @@ const double Degree = 0.01745329251994329576924;
  */
 static void output1(double *p_output1,const double *var1,const double *var2)
 {
-  double t135;
-  double t446;
-  t135 = 0.7071065623731627*var1[2]*var2[0];
-  t446 = var1[2]*var2[1];
+  double t311;
+  double t1334;
+  t311 = 0.7071065623731627*var1[2]*var2[0];
+  t1334 = var1[2]*var2[1];
   p_output1[0]=var1[2];
-  p_output1[1]=t135 + var1[0];
-  p_output1[2]=t135 - 1.*var1[0];
-  p_output1[3]=t135 + var1[1];
-  p_output1[4]=t135 - 1.*var1[1];
-  p_output1[5]=t446 + var1[4];
-  p_output1[6]=t446 - 1.*var1[4];
+  p_output1[1]=t311 + var1[0];
+  p_output1[2]=t311 - 1.*var1[0];
+  p_output1[3]=t311 + var1[1];
+  p_output1[4]=t311 - 1.*var1[1];
+  p_output1[5]=t1334 + var1[4];
+  p_output1[6]=t1334 - 1.*var1[4];
 }
 
 
@@ -124,7 +124,7 @@ void mexFunction( int nlhs, mxArray *plhs[],
 
 #include "u_friction_cone_RightToeBottom.hh"
 
-namespace Times[2, step, Pattern[Cassie, Blank[]]]
+namespace Pattern[Cassie, Blank[oneStep]]
 {
 
 void u_friction_cone_RightToeBottom_raw(double *p_output1, const double *var1,const double *var2)

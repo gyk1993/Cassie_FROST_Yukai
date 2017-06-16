@@ -1,6 +1,6 @@
 /*
  * Automatically Generated from Mathematica.
- * Tue 13 Jun 2017 13:00:20 GMT-04:00
+ * Fri 16 Jun 2017 12:35:17 GMT-04:00
  */
 
 #ifdef MATLAB_MEX_FILE
@@ -2232,7 +2232,7 @@ void mexFunction( int nlhs, mxArray *plhs[],
 
 #include "Js_dxDiscreteMapRightImpact.hh"
 
-namespace RightImpact
+namespace Pattern[Cassie, Blank[oneStep]]
 {
 
 void Js_dxDiscreteMapRightImpact_raw(double *p_output1, const double *var1)

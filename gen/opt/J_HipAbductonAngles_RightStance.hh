@@ -1,6 +1,6 @@
 /*
  * Automatically Generated from Mathematica.
- * Tue 13 Jun 2017 14:31:15 GMT-04:00
+ * Thu 15 Jun 2017 17:12:40 GMT-04:00
  */
 
 #ifndef J_HIPABDUCTONANGLES_RIGHTSTANCE_HH
@@ -14,7 +14,7 @@
 #include "math2mat.hpp"
 #include "mdefs.hpp"
 
-namespace RightStance
+namespace Pattern[Cassie, Blank[oneStep]]
 {
 
   void J_HipAbductonAngles_RightStance_raw(double *p_output1, const double *var1);

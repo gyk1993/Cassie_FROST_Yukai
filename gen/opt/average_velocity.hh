@@ -1,6 +1,6 @@
 /*
  * Automatically Generated from Mathematica.
- * Mon 12 Jun 2017 22:10:55 GMT-04:00
+ * Fri 16 Jun 2017 12:30:15 GMT-04:00
  */
 
 #ifndef AVERAGE_VELOCITY_HH
@@ -14,7 +14,7 @@
 #include "math2mat.hpp"
 #include "mdefs.hpp"
 
-namespace Times[2, step, Pattern[Cassie, Blank[]]]
+namespace Pattern[Cassie, Blank[oneStep]]
 {
 
   void average_velocity_raw(double *p_output1, const double *var1,const double *var2,const double *var3);
@@ -29,7 +29,7 @@ namespace Times[2, step, Pattern[Cassie, Blank[]]]
 
 	
     // - Outputs
-    assert_size_matrix(p_output1, 2, 1);
+    assert_size_matrix(p_output1, 1, 1);
 
 
     // set zero the matrix

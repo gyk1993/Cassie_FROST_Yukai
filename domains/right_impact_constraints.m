@@ -7,7 +7,7 @@ function right_impact_constraints(nlp, src, tar, bounds, varargin)
     
     % Don't need time continuity constraint
     removeConstraint(nlp,'tContDomain');
-    
+    removeConstraint(nlp,['xDiscreteMap' plant.Name]);
     % the configuration only depends on the relabeling matrix
     R = plant.R;
     x = plant.States.x;
