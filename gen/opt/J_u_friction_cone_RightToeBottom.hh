@@ -1,6 +1,6 @@
 /*
  * Automatically Generated from Mathematica.
- * Fri 16 Jun 2017 12:29:59 GMT-04:00
+ * Tue 20 Jun 2017 12:42:05 GMT-04:00
  */
 
 #ifndef J_U_FRICTION_CONE_RIGHTTOEBOTTOM_HH

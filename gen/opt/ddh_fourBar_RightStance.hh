@@ -1,6 +1,6 @@
 /*
  * Automatically Generated from Mathematica.
- * Fri 16 Jun 2017 12:29:04 GMT-04:00
+ * Tue 20 Jun 2017 12:41:10 GMT-04:00
  */
 
 #ifndef DDH_FOURBAR_RIGHTSTANCE_HH

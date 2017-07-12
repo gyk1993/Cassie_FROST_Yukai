@@ -1,6 +1,6 @@
 /*
  * Automatically Generated from Mathematica.
- * Fri 16 Jun 2017 12:30:33 GMT-04:00
+ * Tue 20 Jun 2017 12:42:40 GMT-04:00
  */
 
 #ifndef DXPLUSCONT_RIGHTIMPACT_HH

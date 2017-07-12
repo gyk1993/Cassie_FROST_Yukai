@@ -1,6 +1,6 @@
 /*
  * Automatically Generated from Mathematica.
- * Thu 15 Jun 2017 17:12:42 GMT-04:00
+ * Tue 20 Jun 2017 12:42:29 GMT-04:00
  */
 
 #ifndef HIPROTATIONANGLES_RIGHTSTANCE_HH

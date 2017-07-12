@@ -17,7 +17,7 @@
   <xacro:pelvis cname="grey" color="${grey_RGB}" />
   <xacro:pelvis_abduction side="left" cname="light_grey" color="${light_grey_RGB}" stl_ext=""/>
   <xacro:pelvis_rotation side="left" cname="light_grey" color="${light_grey_RGB}" stl_ext="" reflect="1" />
-  <xacro:hip side="left" cname="light_grey" color="${light_grey_RGB}" stl_ext="" reflect="1"/>
+  <xacro:hip side="left" cname="light_grey" color="${light_grey_RGB}" stl_ext="" />
   <xacro:thigh side="left" cname="light_grey" color="${light_grey_RGB}" stl_ext="" reflect="1"/>
   <xacro:knee side="left" cname="grey" color="${grey_RGB}" stl_ext="" reflect="1"/>
   <xacro:shin side="left" cname="grey" color="${grey_RGB}" stl_ext="" reflect="1"/>
@@ -25,7 +25,7 @@
   <xacro:toe side="left" cname="light_grey" color="${light_grey_RGB}" stl_ext="" reflect="1"/>
   <xacro:pelvis_abduction side="right" cname="light_grey" color="${light_grey_RGB}" stl_ext="_mirror"/>
   <xacro:pelvis_rotation side="right" cname="light_grey" color="${light_grey_RGB}" stl_ext="_mirror" reflect="-1"/>
-  <xacro:hip side="right" cname="light_grey" color="${light_grey_RGB}" stl_ext="_mirror" reflect="-1"/>
+  <xacro:hip side="right" cname="light_grey" color="${light_grey_RGB}" stl_ext="_mirror"/>
   <xacro:thigh side="right" cname="light_grey" color="${light_grey_RGB}" stl_ext="_mirror" reflect="-1"/>
   <xacro:knee side="right" cname="grey" color="${grey_RGB}" stl_ext="_mirror" reflect="-1"/>
   <xacro:shin side="right" cname="grey" color="${grey_RGB}" stl_ext="_mirror" reflect="-1"/>
@@ -118,12 +118,12 @@
       </visual>
     </link>
   </xacro:macro>
-  <xacro:macro name="hip" params="side cname color stl_ext reflect">
+  <xacro:macro name="hip" params="side cname color stl_ext">
     <link name="${side}_hip">
       <inertial>
         <origin xyz="-.0557 0 0" rpy="0 0 0"/>
         <mass value="1.17" />
-        <inertia ixx=".000842" ixy=".000000246" ixz="${reflect*-.000000625}" iyy=".006080" iyz="${reflect*-.00000004}" izz=".006440" />
+        <inertia ixx=".000842" ixy=".000000246" ixz="-.000000625" iyy=".006080" iyz="-.00000004" izz=".006440" />
       </inertial>
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
@@ -254,7 +254,7 @@
   <xacro:macro name="hip_rotation" params="side">
     <joint name="hip_rotation_${side}" type="continuous">
       <origin xyz="0 0 -0.09" rpy="0 ${pi/2} ${-pi/2}"/>
-      <axis xyz="1 0 0"/>
+      <axis xyz="-1 0 0"/>
       <parent link="${side}_pelvis_rotation" />
       <child link="${side}_hip" />
 	  <limit lower="-0.3927" upper="0.3927" effort="4.5" velocity="12.1475" />

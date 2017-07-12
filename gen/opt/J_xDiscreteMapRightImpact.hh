@@ -1,6 +1,6 @@
 /*
  * Automatically Generated from Mathematica.
- * Fri 16 Jun 2017 12:35:19 GMT-04:00
+ * Tue 20 Jun 2017 12:47:31 GMT-04:00
  */
 
 #ifndef J_XDISCRETEMAPRIGHTIMPACT_HH

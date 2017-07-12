@@ -1,5 +1,5 @@
 %% Setup
-clear; clc;
+clear;
 cur = pwd;
 addpath(genpath(cur));
 export_path = fullfile(cur, 'gen\');
@@ -52,17 +52,27 @@ u2 = sum((u).^2);
 u2_fun = SymFunction('torque',u2,{u});
 addRunningCost(nlp.Phase(getPhaseIndex(nlp,'RightStance')),u2_fun,'u');
 
+% Torso cost
+weight = 100;
+q_torso = r_stance.States.x([4,5,6]);
+w = SymVariable('w');
+cost = tomatrix(w*sum(q_torso.^2));
+cost_fun = SymFunction('q_torso_fun', cost, {r_stance.States.x},{w});
+addRunningCost(nlp.Phase(getPhaseIndex(nlp,'RightStance')),cost_fun,'x', weight);
+
+
 % % Hip Abduction Cost
 % q_torso = r_stance.States.x([4,5]);
 % cost = {sum((100.*q_torso).^2)};
 % cost_fun = SymFunction('q_torso',cost,{r_stance.States.x});
 % addRunningCost(nlp.Phase(getPhaseIndex(nlp,'RightStance')),cost_fun,'x');
 % 
-% % Hip Abduction Cost
-% q_hip_abduction = r_stance.States.x([8,16]);
-% cost = {sum((100.*q_hip_abduction).^2)};
-% cost_fun = SymFunction('q_hip_abduction',cost,{r_stance.States.x});
-% addRunningCost(nlp.Phase(getPhaseIndex(nlp,'RightStance')),cost_fun,'x');
+% Hip Abduction Cost
+weight = 100;
+q_hip_abduction = r_stance.States.x([8,16]);
+cost = tomatrix(sum((weight*q_hip_abduction).^2));
+cost_fun = SymFunction('q_hip_abduction',cost,{r_stance.States.x});
+addRunningCost(nlp.Phase(getPhaseIndex(nlp,'RightStance')),cost_fun,'x');
 % 
 % % Hip Rotation Cost
 % q_hip_rotation = r_stance.States.x([9,17]);
@@ -134,7 +144,7 @@ old = load('x1');
 [sol, info] = optimize(solver, old.sol);
 % [sol, info] = optimize(solver);
 [tspan, states, inputs, params] = exportSolution(nlp, sol);
-
+% save('00dms_5','tspan', 'states', 'inputs', 'params')
 save('x1','sol')
 %% Animate 
 q_log_R = states{1}.x; % Right stance

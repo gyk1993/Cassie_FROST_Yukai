@@ -1,6 +1,6 @@
 /*
  * Automatically Generated from Mathematica.
- * Fri 16 Jun 2017 12:28:37 GMT-04:00
+ * Tue 20 Jun 2017 12:40:43 GMT-04:00
  */
 
 #ifndef J_PQFIXEDCONT_RIGHTSTANCE_HH

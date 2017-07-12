@@ -59,7 +59,7 @@
     <inertial>
       <origin rpy="0 0 0" xyz="-.0557 0 0"/>
       <mass value="1.17"/>
-      <inertia ixx=".000842" ixy=".000000246" ixz="-6.25e-07" iyy=".006080" iyz="-4e-08" izz=".006440"/>
+      <inertia ixx=".000842" ixy=".000000246" ixz="-.000000625" iyy=".006080" iyz="-.00000004" izz=".006440"/>
     </inertial>
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
@@ -187,7 +187,7 @@
     <inertial>
       <origin rpy="0 0 0" xyz="-.0557 0 0"/>
       <mass value="1.17"/>
-      <inertia ixx=".000842" ixy=".000000246" ixz="6.25e-07" iyy=".006080" iyz="4e-08" izz=".006440"/>
+      <inertia ixx=".000842" ixy=".000000246" ixz="-.000000625" iyy=".006080" iyz="-.00000004" izz=".006440"/>
     </inertial>
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
@@ -295,7 +295,7 @@
   </joint>
   <joint name="hip_rotation_left" type="continuous">
     <origin rpy="0 1.57079632679 -1.57079632679" xyz="0 0 -0.09"/>
-    <axis xyz="1 0 0"/>
+    <axis xyz="-1 0 0"/>
     <parent link="left_pelvis_rotation"/>
     <child link="left_hip"/>
     <limit effort="4.5" lower="-0.3927" upper="0.3927" velocity="12.1475"/>
@@ -351,7 +351,7 @@
   </joint>
   <joint name="hip_rotation_right" type="continuous">
     <origin rpy="0 1.57079632679 -1.57079632679" xyz="0 0 -0.09"/>
-    <axis xyz="1 0 0"/>
+    <axis xyz="-1 0 0"/>
     <parent link="right_pelvis_rotation"/>
     <child link="right_hip"/>
     <limit effort="4.5" lower="-0.3927" upper="0.3927" velocity="12.1475"/>

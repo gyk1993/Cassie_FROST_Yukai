@@ -1,6 +1,6 @@
 /*
  * Automatically Generated from Mathematica.
- * Fri 16 Jun 2017 12:30:07 GMT-04:00
+ * Tue 20 Jun 2017 12:42:12 GMT-04:00
  */
 
 #ifndef JS_D1Y_TIME_RIGHTSTANCE_HH

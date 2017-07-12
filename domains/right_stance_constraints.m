@@ -11,8 +11,8 @@ function right_stance_constraints(nlp, bounds, varargin)
     p_name = domain.VirtualConstraints.time.PhaseParamName;
     tau_0 = SymFunction(['tau_0_',domain.Name], T(1) - p{1}(2), [{T},p]);
     tau_F = SymFunction(['tau_F_',domain.Name], T(2) - p{1}(1), [{T},p]);
-    addNodeConstraint(nlp, tau_0, [{'T'},p_name], 'first', 0, 0, 'Nonlinear');
-    addNodeConstraint(nlp, tau_F, [{'T'},p_name], 'last', 0, 0, 'Nonlinear');
+    addNodeConstraint(nlp, tau_0, {'T',p_name}, 'first', 0, 0, 'Nonlinear');
+    addNodeConstraint(nlp, tau_F, {'T',p_name}, 'last', 0, 0, 'Nonlinear');
 
     %% average velocity
     velocity_desired = [0];
@@ -35,7 +35,7 @@ function right_stance_constraints(nlp, bounds, varargin)
     %% Swing Foot Clearance
     X  = SymVariable('x',[domain.numState,1]);
     swingFootHeight = SymFunction(['swingFootClearance_',domain.Name], nlp.Plant.EventFuncs.leftFootHeight.ConstrExpr, {X});
-    addNodeConstraint(nlp, swingFootHeight, {'x'}, floor(nlp.NumNode/2), 0.1, Inf,'Linear');
+    addNodeConstraint(nlp, swingFootHeight, {'x'}, floor(nlp.NumNode/2), 0.2, Inf,'Linear');
     
     %% Level swing toe
 %     J_swToe = domain.ContactPoints.LeftToeBottom.computeBodyJacobian(domain.numState);

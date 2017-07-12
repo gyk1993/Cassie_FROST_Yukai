@@ -1,6 +1,6 @@
 /*
  * Automatically Generated from Mathematica.
- * Fri 16 Jun 2017 12:30:20 GMT-04:00
+ * Tue 20 Jun 2017 12:42:25 GMT-04:00
  */
 
 #ifndef J_BODY2TOEDISTANCE_RIGHTSTANCE_HH

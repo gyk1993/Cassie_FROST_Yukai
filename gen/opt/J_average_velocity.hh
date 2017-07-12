@@ -1,6 +1,6 @@
 /*
  * Automatically Generated from Mathematica.
- * Fri 16 Jun 2017 12:30:15 GMT-04:00
+ * Tue 20 Jun 2017 12:42:21 GMT-04:00
  */
 
 #ifndef J_AVERAGE_VELOCITY_HH
