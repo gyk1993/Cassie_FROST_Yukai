@@ -127,7 +127,7 @@ end
 % removeConstraint(nlp.Phase(4),'dxDiscreteMapLeftImpact');
 
 % Create Ipopt solver
-% ipopt_options.max_iter         = 3000;
+ipopt_options.max_iter         = 3000;
 % ipopt_options.tol              = 1e2;
 % ipopt_options.dual_inf_tol           = 1e2;
 % ipopt_options.constr_viol_tol        = 1e-3;
@@ -137,14 +137,14 @@ end
 % ipopt_options.derivative_test_print_all = 'no';
 
 nlp.update;
-% solver = IpoptApplication(nlp, ipopt_options);
-solver = IpoptApplication(nlp);
+solver = IpoptApplication(nlp, ipopt_options);
+% solver = IpoptApplication(nlp);
 % Run Optimization
-old = load('x1');
-[sol, info] = optimize(solver, old.sol);
-% [sol, info] = optimize(solver);
+% old = load('x1');
+% [sol, info] = optimize(solver, old.sol);
+[sol, info] = optimize(solver);
 [tspan, states, inputs, params] = exportSolution(nlp, sol);
-% save('00dms_5','tspan', 'states', 'inputs', 'params')
+% save('00dms_5','tspan', 'states', 'inputs', 'params','sol')
 save('x1','sol')
 %% Animate 
 q_log_R = states{1}.x; % Right stance

@@ -35,7 +35,7 @@ function right_stance_constraints(nlp, bounds, varargin)
     %% Swing Foot Clearance
     X  = SymVariable('x',[domain.numState,1]);
     swingFootHeight = SymFunction(['swingFootClearance_',domain.Name], nlp.Plant.EventFuncs.leftFootHeight.ConstrExpr, {X});
-    addNodeConstraint(nlp, swingFootHeight, {'x'}, floor(nlp.NumNode/2), 0.2, Inf,'Linear');
+    addNodeConstraint(nlp, swingFootHeight, {'x'}, floor(nlp.NumNode/2), 0.1, Inf,'Linear');
     
     %% Level swing toe
 %     J_swToe = domain.ContactPoints.LeftToeBottom.computeBodyJacobian(domain.numState);

@@ -1,5 +1,8 @@
 % Set Bounds
 model_bounds = cassie.getLimits();
+
+model_bounds.states.x.ub([11,19]) = -0.9;
+
 bounds = struct();
 
 %% Right Stance
@@ -52,6 +55,9 @@ bounds.RightStance.params.ptime.x0 = [bounds.RightStance.time.t0.x0, bounds.Righ
 bounds.RightStance.time.kp = 100;
 bounds.RightStance.time.kd = 20;
 
+
+bounds.RightStance.inputs.Control.u.lb([10]) = -0.01;
+bounds.RightStance.inputs.Control.u.lb([10]) = -0.01;
 %% Left Stance
 bounds.LeftStance = model_bounds;
 
