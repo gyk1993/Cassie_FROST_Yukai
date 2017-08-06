@@ -1,6 +1,6 @@
 /*
  * Automatically Generated from Mathematica.
- * Tue 20 Jun 2017 12:41:03 GMT-04:00
+ * Fri 4 Aug 2017 15:37:09 GMT-04:00
  */
 
 #ifndef DDH_QFIXED_CASSIE_HH

@@ -8,7 +8,7 @@ if ~exist(export_path,'dir')
     addpath(export_path);
 end
 
-COMPILE = false;
+COMPILE = true;
 
 % Set FROST path
 FROST_PATH = 'D:\Graduate\robots\SomePackage\frost';
@@ -140,12 +140,12 @@ nlp.update;
 solver = IpoptApplication(nlp, ipopt_options);
 % solver = IpoptApplication(nlp);
 % Run Optimization
-% old = load('x1');
-% [sol, info] = optimize(solver, old.sol);
-[sol, info] = optimize(solver);
+old = load('x1');
+[sol, info] = optimize(solver, old.sol);
+% [sol, info] = optimize(solver);
 [tspan, states, inputs, params] = exportSolution(nlp, sol);
 % save('00dms_5','tspan', 'states', 'inputs', 'params','sol')
-save('x1','sol')
+% save('x1','sol')
 %% Animate 
 q_log_R = states{1}.x; % Right stance
 q_log_L = q_log_R([1:6,15:22,7:14],:); % symmetric Left stance

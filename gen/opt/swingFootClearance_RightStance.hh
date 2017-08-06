@@ -1,6 +1,6 @@
 /*
  * Automatically Generated from Mathematica.
- * Tue 20 Jun 2017 12:42:22 GMT-04:00
+ * Fri 4 Aug 2017 15:38:28 GMT-04:00
  */
 
 #ifndef SWINGFOOTCLEARANCE_RIGHTSTANCE_HH

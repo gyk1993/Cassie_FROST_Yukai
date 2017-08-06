@@ -1,6 +1,6 @@
 /*
  * Automatically Generated from Mathematica.
- * Tue 20 Jun 2017 12:40:35 GMT-04:00
+ * Fri 4 Aug 2017 15:36:43 GMT-04:00
  */
 
 #ifdef MATLAB_MEX_FILE
@@ -45,28 +45,28 @@ const double Degree = 0.01745329251994329576924;
  */
 static void output1(double *p_output1,const double *var1,const double *var2,const double *var3)
 {
-  double t2521;
-  double t2523;
-  double t2536;
-  double t2540;
-  double t2543;
-  double t2546;
-  double t2547;
-  double t2552;
-  double t2553;
-  t2521 = -1. + var3[0];
-  t2523 = 1/t2521;
-  t2536 = Power(var2[15],2);
-  t2540 = 10000.*t2536;
-  t2543 = Power(var2[7],2);
-  t2546 = 10000.*t2543;
-  t2547 = t2540 + t2546;
-  t2552 = -1.*var1[0];
-  t2553 = t2552 + var1[1];
-  p_output1[0]=-0.166666666666667*t2523*t2547;
-  p_output1[1]=0.166666666666667*t2523*t2547;
-  p_output1[2]=3333.33333333333*t2523*t2553*var2[7];
-  p_output1[3]=3333.33333333333*t2523*t2553*var2[15];
+  double t833;
+  double t834;
+  double t7391;
+  double t7418;
+  double t7445;
+  double t7472;
+  double t7473;
+  double t7484;
+  double t7496;
+  t833 = -1. + var3[0];
+  t834 = 1/t833;
+  t7391 = Power(var2[15],2);
+  t7418 = 10000.*t7391;
+  t7445 = Power(var2[7],2);
+  t7472 = 10000.*t7445;
+  t7473 = t7418 + t7472;
+  t7484 = -1.*var1[0];
+  t7496 = t7484 + var1[1];
+  p_output1[0]=-0.166666666666667*t7473*t834;
+  p_output1[1]=0.166666666666667*t7473*t834;
+  p_output1[2]=3333.33333333333*t7496*t834*var2[7];
+  p_output1[3]=3333.33333333333*t7496*t834*var2[15];
 }
 
 

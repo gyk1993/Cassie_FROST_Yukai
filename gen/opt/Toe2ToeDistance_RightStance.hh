@@ -1,6 +1,6 @@
 /*
  * Automatically Generated from Mathematica.
- * Tue 20 Jun 2017 12:42:27 GMT-04:00
+ * Fri 4 Aug 2017 15:38:32 GMT-04:00
  */
 
 #ifndef TOE2TOEDISTANCE_RIGHTSTANCE_HH

@@ -1,6 +1,6 @@
 /*
  * Automatically Generated from Mathematica.
- * Tue 20 Jun 2017 12:42:16 GMT-04:00
+ * Fri 4 Aug 2017 15:38:22 GMT-04:00
  */
 
 #ifndef J_TAU_0_RIGHTSTANCE_HH
