@@ -62,17 +62,17 @@ function right_stance_constraints(nlp, bounds, varargin)
     addNodeConstraint(nlp, HipRotationAngles, {'x'}, 'all', deg2rad(-5), deg2rad(5), 'Nonlinear');
     
 %% Final swing foot velocity
-    p_swToe = domain.ContactPoints.LeftToeBottom.computeCartesianPosition;
-    v_swToe = jacobian(p_swToe, domain.States.x)*domain.States.dx;
-    
-    swingToeVelocity_x = SymFunction(['SwingToeVelocity_x_',domain.Name],v_swToe(1), {domain.States.x, domain.States.dx});
-    addNodeConstraint(nlp, swingToeVelocity_x, {'x','dx'}, 'last', -0.1, 0.1, 'Nonlinear');
-    
-    swingToeVelocity_y = SymFunction(['SwingToeVelocity_y_',domain.Name],v_swToe(2), {domain.States.x, domain.States.dx});
-    addNodeConstraint(nlp, swingToeVelocity_y, {'x','dx'}, 'last', -0.1, 0.1, 'Nonlinear');
-    
-    swingToeVelocity_z = SymFunction(['SwingToeVelocity_z_',domain.Name],v_swToe(3), {domain.States.x, domain.States.dx});
-    addNodeConstraint(nlp, swingToeVelocity_z, {'x','dx'}, 'last', -0.5, 0, 'Nonlinear');
+%     p_swToe = domain.ContactPoints.LeftToeBottom.computeCartesianPosition;
+%     v_swToe = jacobian(p_swToe, domain.States.x)*domain.States.dx;
+%     
+%     swingToeVelocity_x = SymFunction(['SwingToeVelocity_x_',domain.Name],v_swToe(1), {domain.States.x, domain.States.dx});
+%     addNodeConstraint(nlp, swingToeVelocity_x, {'x','dx'}, 'last', -0.1, 0.1, 'Nonlinear');
+%     
+%     swingToeVelocity_y = SymFunction(['SwingToeVelocity_y_',domain.Name],v_swToe(2), {domain.States.x, domain.States.dx});
+%     addNodeConstraint(nlp, swingToeVelocity_y, {'x','dx'}, 'last', -0.1, 0.1, 'Nonlinear');
+%     
+%     swingToeVelocity_z = SymFunction(['SwingToeVelocity_z_',domain.Name],v_swToe(3), {domain.States.x, domain.States.dx});
+%     addNodeConstraint(nlp, swingToeVelocity_z, {'x','dx'}, 'last', -0.5, 0, 'Nonlinear');
 end
 
 

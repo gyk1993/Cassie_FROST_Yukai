@@ -56,8 +56,8 @@ bounds.RightStance.time.kp = 100;
 bounds.RightStance.time.kd = 20;
 
 
-bounds.RightStance.inputs.Control.u.lb([10]) = -0.01;
-bounds.RightStance.inputs.Control.u.lb([10]) = -0.01;
+% bounds.RightStance.inputs.Control.u.lb([10]) = -0.01;
+% bounds.RightStance.inputs.Control.u.ub([10]) = 0.01;
 %% Left Stance
 bounds.LeftStance = model_bounds;
 
